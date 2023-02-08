@@ -104,6 +104,25 @@
       });
     });
 
+
+    //Precedence of Evaluation
+    describe('mathcmatical order', function() {
+
+      it('determine the outcome based on the equation passed.', function() {
+        var test1 = (a,b,c) => a + b * c;
+        expect(_.whatOrder(test1(1,2,3))).to.eql(FILL_ME_IN);
+
+        var test2 = (a,b,c) => a * b + c;
+        expect(_.whatOrder(test2(1,2,3))).to.eql(FILL_ME_IN);
+
+        var test3 = (a,b,c) => a / c * b + c;
+        expect(_.whatOrder(test3(6,8,2))).to.eql(FILL_ME_IN);
+
+        var test4 = (a,b,c) => a + c + b + b * a / b - c / b;
+        expect(_.whatOrder(test4(10,2,6))).to.eql(FILL_ME_IN);
+      });
+    });
+
     //END OF PART I
   });
 

@@ -69,6 +69,12 @@ _.decrement = function(a){
   
 }
 
+//This function is complete and working. All you will need to do is 
+//replace FILL_ME_IN in the variables.js test file.
+_.whatOrder = function(test){
+  return test;
+}
+
 //PART II
 
 //-------------------------------------------------------------------------
@@ -97,9 +103,29 @@ _.lessThan = function(a,b){
 
 //_.falsyOrTruthy takes a parameter and determines whether it is TRUTHY or FALSY
 _.falsyOrTruthy = function(a){
- return a ?  true : false;
+   //Code Goes Below
+
 }
 
+  //In the next tests you will be given four parameters to compare, sort of.
+  //You will be given a, b, c, and d. Within your function you will compare 
+  //a to b as well as comparing c to d. You will then compare their outcomes with
+  //eachother using the && or || logic to return true or false. 
+  //EXAMPLE 3 > 2 && 5 === 6
+  //The above example will evaluate to False because 3 > 2 === True and 5 === 6 False.
+  // And as you learned in the Learn content True && False evaluates to False.
+  //For the _.andand function as well as the _.oror function you will just be using the === comparator
 
+  //_.andand will be using the && comparator
+  _.andand = function(a,b,c,d) {
+  //Code Goes Below
+
+  }
+
+    //_.oror will be using the || comparator
+    _.oror = function(a,b,c,d) {
+      //Code Goes Below
+
+      }
 
 }());
