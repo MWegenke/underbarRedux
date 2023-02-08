@@ -2,48 +2,96 @@
   'use strict';
 
   window._ = {};
+
+  var FILL_ME_IN = 'Fill this value in';
 /* SCAFFOLDING
   _.func = function(){
-
+ 
   }
 */
-  // Returns whatever value is passed as the argument. This function doesn't
-  // seem very useful, but remember it--if a function needs to provide an
-  // iterator when the user does not pass one in, this will be handy.
-  _.identity = function(val) {
-    return val;
-  };
+//_.define is wanting you to declare a variable, set your variable to the input from the function
+// and then return the variable you just created. This function is nearly completed for you, 
+// to help guide you toward success in your work on the following exercises.
+  _.define = function(input){
+    // Declare a variable below that is assigned the value of input;
+    var result = FILL_ME_IN;
+    // return the above variable
+    return FILL_ME_IN;
+  }
 
-  /**
-   * COLLECTIONS
-   * ===========
-   *
-   * In this section, we'll have a look at functions that operate on collections
-   * of values; in JavaScript, a 'collection' is something that can contain a
-   * number of values--either an array or an object.
-   *
-   *
-   * IMPORTANT NOTE!
-   * ===========
-   *
-   * The .first function is implemented for you, to help guide you toward success
-   * in your work on the following functions. Whenever you see a portion of the
-   * assignment pre-completed, be sure to read and understand it fully before
-   * you proceed. Skipping this step will lead to considerably more difficulty
-   * implementing the sections you are responsible for.
-   */
+//_.dataType is wanting you to determine the data type of what is being passed to it.
+// Return the datatype of input: ie. String or integer or boolean etc. 
+_.dataType = function(input){
+  //Code Goes Below
 
-  // Return an array of the first n elements of an array. If n is undefined,
-  // return just the first element.
-  _.first = function(array, n) {
-    return n === undefined ? array[0] : array.slice(0, n);
-  };
+}
 
-  // Like first, but for the last elements. If n is undefined, return just the
-  // last element.
-  _.last = function(array, n) {
-    if (n === undefined) return array[array.length -1];
-    return n > 0 ? array.slice(-n) : [];
-  };
+//_.sum takes two numbers as parameters and returns their sum
+_.sum = function(a,b){
+    //Code Goes Below
+
+}
+
+//_.subtract takes two numbers as parameters and returns their difference
+_.subtract = function(a,b){
+  //Code Goes Below
+}
+
+//_.multiply takes two numbers as parameters and returns their product
+_.multiply = function(a,b){
+  //Code Goes Below
+
+}
+
+//_.divide takes two numbers as parameters and returns their quotent
+_.divide = function(a,b){
+  //Code Goes Below
+  
+}
+
+//_.modulus takes two numbers as parameters and returns their remainder of a divided by b
+_.modulus = function(a,b){
+  //Code Goes Below
+  
+}
+
+//_.increment takes a number as a parameter and increces it by 1
+// Ensure you use the proper increment operator(not a + 1)
+_.increment = function(a){
+  //Code Goes Below
+  
+}
+
+//_.decrement takes a number as a parameter and reduces it by 1
+// Ensure you use the proper decrement operator (not a - 1)
+_.decrement = function(a){
+  //Code Goes Below
+  
+}
+
+//_.same takes two parameters and returns whether they are the equal or not
+_.same = function(a,b){
+  //Code Goes Below
+  
+}
+
+//_.greater takes two numbers as parameters and checks if a is greater than b
+_.greater = function(a,b){
+  //Code Goes Below
+  
+}
+
+//_.greater takes two numbers as parameters and checks if a is less than b
+_.lessThan = function(a,b){
+  //Code Goes Below
+  
+}
+
+//_.falsyOrTruthy takes a parameter and determines whether it is TRUTHY or FALSY
+_.falsyOrTruthy = function(a){
+ return a ?  true : false;
+}
+
+
 
 }());
