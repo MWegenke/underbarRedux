@@ -69,6 +69,14 @@ _.decrement = function(a){
   
 }
 
+//PART II
+
+//-------------------------------------------------------------------------
+/*
+  Now you will start using logic to pass your tests. You will be using comparators to pass the tests.
+*/
+//-------------------------------------------------------------------------
+
 //_.same takes two parameters and returns whether they are the equal or not
 _.same = function(a,b){
   //Code Goes Below
