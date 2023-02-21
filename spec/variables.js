@@ -107,7 +107,7 @@
 
     //Precedence of Evaluation
     describe('mathcmatical order', function() {
-
+      //Based on the test passed to _.whatOrder, determind the value of the output.
       it('determine the outcome based on the equation passed.', function() {
         var test1 = (a,b,c) => a + b * c;
         expect(_.whatOrder(test1(1,2,3))).to.eql(FILL_ME_IN);

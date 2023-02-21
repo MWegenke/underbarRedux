@@ -23,43 +23,45 @@
 // Return the datatype of input: ie. String or integer or boolean etc. 
 _.dataType = function(input){
   //Code Goes Below
-
+  return typeof(input);
 }
 
 //_.sum takes two numbers as parameters and returns their sum
 _.sum = function(a,b){
     //Code Goes Below
-
+  return a+b;
 }
 
 //_.subtract takes two numbers as parameters and returns their difference
 _.subtract = function(a,b){
   //Code Goes Below
+  return a-b;
 }
 
 //_.multiply takes two numbers as parameters and returns their product
 _.multiply = function(a,b){
   //Code Goes Below
-
+  return a*b;
 }
 
 //_.divide takes two numbers as parameters and returns their quotent
 _.divide = function(a,b){
   //Code Goes Below
-  
+  return a/b;
 }
 
 //_.modulus takes two numbers as parameters and returns their remainder of a divided by b
 _.modulus = function(a,b){
   //Code Goes Below
-  
+  return a%b;
 }
 
 //_.increment takes a number as a parameter and increces it by 1
 // Ensure you use the proper increment operator(not a + 1)
 _.increment = function(a){
   //Code Goes Below
-  
+  var res = a++;
+  return res;
 }
 
 //_.decrement takes a number as a parameter and reduces it by 1
@@ -86,25 +88,25 @@ _.whatOrder = function(test){
 //_.same takes two parameters and returns whether they are the equal or not
 _.same = function(a,b){
   //Code Goes Below
-  
+  return a === b;
 }
 
 //_.greater takes two numbers as parameters and checks if a is greater than b
 _.greater = function(a,b){
   //Code Goes Below
-  
+  return a > b;
 }
 
 //_.greater takes two numbers as parameters and checks if a is less than b
 _.lessThan = function(a,b){
   //Code Goes Below
-  
+  return a < b;
 }
 
 //_.falsyOrTruthy takes a parameter and determines whether it is TRUTHY or FALSY
 _.falsyOrTruthy = function(a){
    //Code Goes Below
-
+  return a ? true : false
 }
 
   //In the next tests you will be given four parameters to compare, sort of.
@@ -119,13 +121,51 @@ _.falsyOrTruthy = function(a){
   //_.andand will be using the && comparator
   _.andand = function(a,b,c,d) {
   //Code Goes Below
-
+    return a === b && c === d;
   }
 
     //_.oror will be using the || comparator
     _.oror = function(a,b,c,d) {
       //Code Goes Below
-
+      return a === b || c === d;
       }
+
+  //Control Flow
+  //Create a basic if statement to pass the tests. 
+  _.ifLogic = function(a, b){
+    //Code Goes Below
+    if (a === b){
+      return "Great"
+    }
+  }
+
+    //Create a basic if else statement to pass the tests. 
+    _.ifElseLogic = function(a, b){
+      //Code Goes Below
+      if (a === b ){
+        return 'Great'
+      }else{
+        return 'Good'
+      }
+    }
+
+    //Using a for loop, iterate through the array passed. 
+    //Return the array as a single string.
+    _.forLoop = function(a){
+      //Code Goes Below
+      var res ='';
+      for(let x of a){
+        res += x;
+      }
+      return res
+    }
+
+    //Using an if else statemnt to determine the data types stored in the provided array.  
+    //NOTE: Any array passed will all have the same data type across all elements (string or number). 
+    //Once you determine the data type, use a for loop to either create a single string or the sum of the numbers.
+    _.forIfElse = function(a){
+      //Code Goes Below
+
+    }
 
 }());
