@@ -3,7 +3,7 @@
 
   var FILL_ME_IN = 'Fill this value in';
 
-  describe('Part II \n LOGICAL', function() {
+  describe('Part II --- LOGICAL', function() {
 
    
     describe('same', function() {

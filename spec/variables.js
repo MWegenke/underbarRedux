@@ -20,7 +20,7 @@
     });
   */
 
-  describe('Part I \n VARIABLES', function() {
+  describe('Part I --- VARIABLES', function() {
 
     describe('define', function() {
 

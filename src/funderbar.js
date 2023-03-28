@@ -153,42 +153,21 @@ _.falsyOrTruthy = function(a){
     //While looping through the array passed determine the data type of the element. If the element is a number add it to the a variable. At the end return that variable. 
     _.forIfElseNum = function(a){
       //Code Goes Below
-      let tot = 0;
 
-      for(let i =0; i < a.length; i++){
-        if (typeof(a[i]) === 'number'){
-          tot += a[i];
-        } 
-      }
-
-      return tot;
     }
 
     //This function is similar to the above function. Only this time you will be building a sentence rather than a total number. Loop through the array and concatinate the strings in it to make a sentence.
     _.forIfElseStr = function(a){
       //Code Goes Below
-      let sentence = '';
 
-      for(let i =0; i < a.length; i++){
-        if (typeof(a[i]) === 'string'){
-          sentence += a[i];
-        } 
-      }
-
-      return sentence;
     }
 
     //In this function you will loop though the passed in array. Prior to that you need to check the second parameter to determine what you will be returning. If the second parameter is 'string' return a sentence created using the strings in the array. If the second parameter is 'number' you will return the total of the number in the array. 
     _.ifElseFor = function(a,b){
       //Code Goes Below
 
-      if(b === 'number'){
-        return _.forIfElseNum(a);
-      }else if(b === 'string'){
-        return _.forIfElseStr(a);
-      }
-
-    
     }
+
+    //PART III
 
 }());
