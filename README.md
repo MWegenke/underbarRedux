@@ -1,9 +1,9 @@
-# underbarRedux
-Reduced version of underbar.
+# Funderbar
+Fundamentals version of underbar.
 
-# usaf-sdi-underbar
+# usaf-sdi-funderbar
 
-# Underbar
+# Funderbar
 
 This project was written in the same spirit as
 [JavaScript Koans](https://github.com/mrdavidlaing/javascript-koans), and thusly
@@ -76,7 +76,7 @@ each of the functions by making all of the tests pass:
 
 ## Extra Extra Credit
 
-- Fork and Clone the [underbar.js](https://https://github.com/gSchool/sdi-workshop-underbar/)
+- Fork and Clone the [underbar.js](https://github.com/gSchool/sdi-workshop-underbar/)
   implementation and test suite, and try to understand how it works. A great way
   to do this is to break parts of the code and see which tests fail.
 - Compare your implementations to the ones in the real library. Notice that this
