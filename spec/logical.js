@@ -107,6 +107,41 @@
       
     });
 
+    describe('For If/Else Loops, Numbers', function() {
+
+      it("Should return total of all numbers in the array.", function() {
+        
+        expect(_.forIfElseNum(['Coding ', 'is ', 'the ', 'best!'])).to.equal(0);
+        expect(_.forIfElseNum(['I ',2, 'got ',3, 'this!'])).to.equal(5);
+        expect(_.forIfElseNum([1,2,3,4,5])).to.equal(15);
+      });
+      
+    });
+
+    describe('For If/Else Loops, Strings', function() {
+
+      it("Should return a sentence using the strings in the arrays.", function() {
+        
+        expect(_.forIfElseStr(['Coding ', 'is ', 'the ', 'best!'])).to.equal('Coding is the best!');
+        expect(_.forIfElseStr(['I ',2, 'got ',3, 'this!'])).to.equal('I got this!');
+        expect(_.forIfElseStr([1,2,3,4,5])).to.equal('');
+      });
+      
+    });
+
+    describe('For If/Else Loops Advanced', function() {
+
+      it("Should return total of all numbers in the array or a Sentence depending on second parameter.", function() {
+        
+        expect(_.ifElseFor(['Coding ', 'is ', 'the ', 'best!'], 'string')).to.equal('Coding is the best!');
+        expect(_.ifElseFor(['Coding ', 'is ', 'the ', 'best!'], 'number')).to.equal(0);
+        expect(_.ifElseFor(['I ',2, 'got ',3, 'this!'], 'number')).to.equal(5);
+        expect(_.ifElseFor(['I ',2, 'got ',3, 'this!'], 'string')).to.equal('I got this!');
+        expect(_.ifElseFor([1,2,3,4,5], 'number')).to.equal(15);
+        expect(_.ifElseFor([1,2,3,4,5], 'string')).to.equal('');
+      });
+      
+    });
     //END OF PART II
   });
 

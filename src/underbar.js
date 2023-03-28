@@ -134,38 +134,61 @@ _.falsyOrTruthy = function(a){
   //Create a basic if statement to pass the tests. 
   _.ifLogic = function(a, b){
     //Code Goes Below
-    if (a === b){
-      return "Great"
-    }
+
   }
 
     //Create a basic if else statement to pass the tests. 
     _.ifElseLogic = function(a, b){
       //Code Goes Below
-      if (a === b ){
-        return 'Great'
-      }else{
-        return 'Good'
-      }
+
     }
 
     //Using a for loop, iterate through the array passed. 
     //Return the array as a single string.
     _.forLoop = function(a){
       //Code Goes Below
-      var res ='';
-      for(let x of a){
-        res += x;
-      }
-      return res
+
     }
 
-    //Using an if else statemnt to determine the data types stored in the provided array.  
-    //NOTE: Any array passed will all have the same data type across all elements (string or number). 
-    //Once you determine the data type, use a for loop to either create a single string or the sum of the numbers.
-    _.forIfElse = function(a){
+    //While looping through the array passed determine the data type of the element. If the element is a number add it to the a variable. At the end return that variable. 
+    _.forIfElseNum = function(a){
+      //Code Goes Below
+      let tot = 0;
+
+      for(let i =0; i < a.length; i++){
+        if (typeof(a[i]) === 'number'){
+          tot += a[i];
+        } 
+      }
+
+      return tot;
+    }
+
+    //This function is similar to the above function. Only this time you will be building a sentence rather than a total number. Loop through the array and concatinate the strings in it to make a sentence.
+    _.forIfElseStr = function(a){
+      //Code Goes Below
+      let sentence = '';
+
+      for(let i =0; i < a.length; i++){
+        if (typeof(a[i]) === 'string'){
+          sentence += a[i];
+        } 
+      }
+
+      return sentence;
+    }
+
+    //In this function you will loop though the passed in array. Prior to that you need to check the second parameter to determine what you will be returning. If the second parameter is 'string' return a sentence created using the strings in the array. If the second parameter is 'number' you will return the total of the number in the array. 
+    _.ifElseFor = function(a,b){
       //Code Goes Below
 
+      if(b === 'number'){
+        return _.forIfElseNum(a);
+      }else if(b === 'string'){
+        return _.forIfElseStr(a);
+      }
+
+    
     }
 
 }());
