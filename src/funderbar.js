@@ -196,7 +196,7 @@ _.falsyOrTruthy = function(a){
 
     _.objectValue = (a,b) => {
       //Code Goes Below
-      return a[b];
+      
     }
     
 
@@ -215,21 +215,13 @@ _.falsyOrTruthy = function(a){
     //example array.push(value)
     _.forInKeys = (a) =>{
       //Code Goes Below
-      let res = [];
-      for(const x in a){
-        res.push(x);
-      }
-      return res;
+      
     }
 
     //Loop through the given object and return an array of values from the object. 
     //This is similar to the above function but needs a little digging to get the value. 
     _.forInValues = (a) =>{
       //Code Goes Below
-      let res = [];
-      for(const x in a){
-        res.push(a[x]);
-      }
-      return res;
+      
     }
 }());

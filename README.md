@@ -65,13 +65,14 @@ each of the functions by making all of the tests pass:
 - [ ] ifElseFor
 
 #### Extra Credit:
-- [ ] invoke
-- [ ] sortBy
-- [ ] zip
-- [ ] flatten
-- [ ] intersection
-- [ ] difference
-- [ ] throttle
+- [ ] *Object Values*
+- [ ] objectCreationBracket
+- [ ] objectCreationDot
+- [ ] *Array of Objects*
+- [ ] *Object of Objects*
+- [ ] forOf
+- [ ] forInKeys
+- [ ] forInValues
 
 
 ## Extra Extra Credit
