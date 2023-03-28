@@ -41,7 +41,7 @@ each of the functions by making all of the tests pass:
 
 #### Part I (Variables):
 - [ ] define
-- [ ] dataType
+- [ ] *dataType*
 - [ ] sum
 - [ ] subtract
 - [ ] multiply
@@ -49,7 +49,7 @@ each of the functions by making all of the tests pass:
 - [ ] modulus
 - [ ] increment
 - [ ] decrement
-- [ ] whatOrder
+- [ ] *mathOrder*
 
 #### Part II (Logical):
 - [ ] same
@@ -83,5 +83,3 @@ each of the functions by making all of the tests pass:
   assignment has stripped out some complexity from the original library; notice
   where these changes have been made, and try to understand what edge cases the
   original library is handling that your functions aren't.
-- Notice that the real underscore.js uses an object named `breaker`. Look through the
-  source and understand what this is doing, and how it optimizes some of the functions.
